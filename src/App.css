@@ -1,0 +1,152 @@
+@font-face {
+  font-family: citadel;
+  src: url('./src/assets/MoriaCitadel.TTF');
+}
+@font-face {
+  font-family: immortal;
+  src: url('./src/assets/IMMORTAL.TTF');
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: immortal;
+}
+
+button {
+  font-family: immortal;
+  font-size: 14pt;
+  
+  background-color: lightsteelblue;
+  cursor: pointer;
+}
+
+.App {
+
+  background-image: url('./src/assets/bg.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.H1Box {
+  padding: 20px;
+}
+
+.InputBox {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: fit-content;
+  box-shadow: 0 0 8px black, 0 0 8px black;
+  border-radius: 5px;
+}
+
+.WordCountInput {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 30px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 5px;
+  border: darkgray;
+  font-family: immortal;
+  font-size: 14pt;
+}
+
+.WordCountInput input {
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Times New Roman';
+  padding-left: 5px;
+  padding-top: 2px;
+  font-family: immortal;
+  font-size: 14pt;
+  width: 70px;
+}
+
+.InputBox button {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightsteelblue;
+  border: none;
+  cursor: pointer;
+  font-family: immortal;
+  font-size: 14pt;
+}
+
+#SaveBtn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 1px solid rgb(136, 150, 169);
+}
+
+h1 {
+  margin: 0px;
+  padding: 10px 30px;
+  font-family: citadel;
+  color: whitesmoke;
+  text-shadow: 0 0 4px #27A0CB, 0 0 4px #27A0CB, 0 0 4px #27A0CB, 0px 0px 1px black;
+  box-shadow: 0 0 8px black, 0 0 8px black;
+  font-size: 40pt;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.Main {
+  padding-left: 30px;
+  width: 800px;
+  min-height:500px;
+
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0 8px black, 0 0 8px black;
+
+  
+  font-family: immortal;
+  font-size: 14pt;
+}
+
+.StatsContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -20px;
+  font-size: 16pt;
+
+}
+
+.Stats, .Settings {
+  margin-top: 10px;
+  flex-grow: 2;
+  height: 48px;
+  /* margin-bottom: -40px; */
+}
+
+.SettingsIcon {
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.confirm {
+  color: darkred;
+}
+
+.space {
+  min-height: 30px;
+}
